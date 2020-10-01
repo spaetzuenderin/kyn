@@ -11,15 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.API", "1.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.API.Tests", "2.tests\KYN.SwatchService.API.Tests\KYN.SwatchService.API.Tests.csproj", "{2FD9F8AA-033C-4804-A144-E4C8B91AF07D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Business", "1.code\KYN.SwatchService.Business\KYN.SwatchService.Business.csproj", "{0C0DB63B-E096-4585-8A02-23F905CAA203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.Business", "1.code\KYN.SwatchService.Business\KYN.SwatchService.Business.csproj", "{0C0DB63B-E096-4585-8A02-23F905CAA203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Persistence", "1.code\KYN.SwatchService.Persistence\KYN.SwatchService.Persistence.csproj", "{AC957C36-19DB-431D-86E3-9D027FECE81C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.Persistence", "1.code\KYN.SwatchService.Persistence\KYN.SwatchService.Persistence.csproj", "{AC957C36-19DB-431D-86E3-9D027FECE81C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Business.Tests", "2.tests\KYN.SwatchService.Business.Tests\KYN.SwatchService.Business.Tests.csproj", "{5AB02D6B-FD1F-4230-B0B1-99305E11B661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.Business.Tests", "2.tests\KYN.SwatchService.Business.Tests\KYN.SwatchService.Business.Tests.csproj", "{5AB02D6B-FD1F-4230-B0B1-99305E11B661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Persistence.Tests", "2.tests\KYN.SwatchService.Persistence.Tests\KYN.SwatchService.Persistence.Tests.csproj", "{FBC6287F-1E2B-498C-914B-E6454537E775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.Persistence.Tests", "2.tests\KYN.SwatchService.Persistence.Tests\KYN.SwatchService.Persistence.Tests.csproj", "{FBC6287F-1E2B-498C-914B-E6454537E775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Business.Contracts", "1.code\KYN.SwatchService.Business.Contracts\KYN.SwatchService.Business.Contracts.csproj", "{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KYN.SwatchService.Business.Contracts", "1.code\KYN.SwatchService.Business.Contracts\KYN.SwatchService.Business.Contracts.csproj", "{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYN.SwatchService.Persistence.Contracts", "1.code\KYN.SwatchService.Persistence.Contracts\KYN.SwatchService.Persistence.Contracts.csproj", "{A44B28CF-C11B-4CAC-BE37-C80B1A922511}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A44B28CF-C11B-4CAC-BE37-C80B1A922511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A44B28CF-C11B-4CAC-BE37-C80B1A922511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A44B28CF-C11B-4CAC-BE37-C80B1A922511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A44B28CF-C11B-4CAC-BE37-C80B1A922511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{5AB02D6B-FD1F-4230-B0B1-99305E11B661} = {0C0ADE40-0C1E-4B03-A860-038354F01EE0}
 		{FBC6287F-1E2B-498C-914B-E6454537E775} = {0C0ADE40-0C1E-4B03-A860-038354F01EE0}
 		{5B47BB70-4CFD-4A72-9AF1-7C63C892AD21} = {27AE1A22-5FC3-4254-B252-12631F087F15}
+		{A44B28CF-C11B-4CAC-BE37-C80B1A922511} = {27AE1A22-5FC3-4254-B252-12631F087F15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1989E710-C929-488C-882E-146D833FCAF0}
