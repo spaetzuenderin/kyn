@@ -8,14 +8,14 @@ namespace KYN.SwatchService.Business.Models
     /// </summary>
     public class Swatch
     {
-        private Guid Id;
-        private int NumberOfStitches;
-        private int NumberOfRows;
+        public Guid Id { get; }
+        public int NumberOfStitches { get; }
+        public int NumberOfRows { get; }
 
-        private String Name;
-        private String Stitchpattern;
-        private String Yarn; // Could be replaced by Yarn Object?
-        private double NeedleSize;
+        public string Name { get; }
+        public string Stitchpattern { get; }
+        public string Yarn { get; }
+        public double NeedleSize { get; }
 
         public Swatch(int numberOfStitches, int numberOfRows)
         {
