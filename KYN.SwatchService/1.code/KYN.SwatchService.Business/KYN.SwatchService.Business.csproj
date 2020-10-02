@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2.tests\KYN.SwatchService.Business.Tests\KYN.SwatchService.Business.Tests.csproj" />
+    <ProjectReference Include="..\KYN.SwatchService.Business.Contracts\KYN.SwatchService.Business.Contracts.csproj" />
+  </ItemGroup>
 
 </Project>
