@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace KYN.SwatchService.Persistence.Contracts.Entities
 {

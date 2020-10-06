@@ -13,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\KYN.SwatchService.Business.Contracts\KYN.SwatchService.Business.Contracts.csproj" />
     <ProjectReference Include="..\KYN.SwatchService.Business\KYN.SwatchService.Business.csproj" />
-    <ProjectReference Include="..\KYN.SwatchService.Persistence.Contracts\KYN.SwatchService.Persistence.Contracts.csproj" />
   </ItemGroup>
 
 

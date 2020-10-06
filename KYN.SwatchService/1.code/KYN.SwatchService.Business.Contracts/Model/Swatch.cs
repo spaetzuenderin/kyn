@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace KYN.SwatchService.Business.Models
+namespace KYN.SwatchService.Business.Contracts.Model
 {
     /// <summary>
     /// Represents a knitted swatch measuring 10 x 10 cm.
@@ -17,9 +19,13 @@ namespace KYN.SwatchService.Business.Models
         public string Yarn { get; }
         public double NeedleSize { get; }
 
-        public Swatch(int numberOfStitches, int numberOfRows)
+        public Swatch()
         {
             this.Id = Guid.NewGuid();
+        }
+
+        public Swatch(int numberOfStitches, int numberOfRows)
+        {
             this.NumberOfStitches = numberOfStitches;
             this.NumberOfRows = numberOfRows;
         }

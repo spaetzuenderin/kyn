@@ -1,5 +1,6 @@
 using KYN.SwatchService.Business.Contracts;
 using KYN.SwatchService.Business.Handlers;
+using KYN.SwatchService.Business.Mappers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +22,8 @@ namespace KYN.SwatchService.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<ISwatchHandler,SwatchHandler>();
+            services.AddScoped<ISwatchHandler, SwatchHandler>();
+            services.AddScoped<ISwatchMapper, SwatchMapper>();
 
         }
 

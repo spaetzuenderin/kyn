@@ -1,6 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using KYN.SwatchService.Business.Contracts;
-using KYN.SwatchService.Business.Models;
+using KYN.SwatchService.Business.Contracts.Model;
 using KYN.SwatchService.Persistence.Contracts.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,8 +26,6 @@ namespace KYN.SwatchService.API.Controllers
 
             try
             {
-
-
                 swatchEntity = await this.swatchHandler.Create(swatch);
             }
             catch (Exception)

@@ -1,6 +1,8 @@
-﻿using KYN.SwatchService.API.Controllers;
+﻿using System.Threading.Tasks;
+using KYN.SwatchService.API.Controllers;
 using KYN.SwatchService.API.Controllers.Base;
 using KYN.SwatchService.Business.Contracts;
+using KYN.SwatchService.Business.Contracts.Model;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -28,8 +30,13 @@ namespace KYN.SwatchService.API.Tests
         }
 
         [Test]
-        public void CreateShouldDelegateToHandler()
+        public async Task CreateShouldDelegateToHandler()
         {
+            Swatch swatch = new Swatch(29, 36);
+            
+            await this.swatchController.Create(swatch);
+
+            await this.swatchController.ReceivedWithAnyArgs().Create(default);
         }
     }
 }
