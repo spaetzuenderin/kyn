@@ -1,8 +1,9 @@
-﻿namespace KYN.SwatchService.Business.Contracts
+﻿
+
+namespace KYN.SwatchService.Business.Contracts
 {
 
     public interface ISwatchHandler
     {
-        SwatchEntity Create(Swatch swatch);
     }
 }
