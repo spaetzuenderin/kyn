@@ -1,6 +1,6 @@
-﻿using KYN.SwatchService.Business.Contracts;
-using KYN.SwatchService.Business.Models;
-using KYN.SwatchService.Persistence.Contracts;
+﻿using KYN.SwatchService.API.Controllers;
+using KYN.SwatchService.API.Controllers.Base;
+using KYN.SwatchService.Business.Contracts;
 using NSubstitute;
 using NUnit.Framework;
 
@@ -10,19 +10,26 @@ namespace KYN.SwatchService.API.Tests
     public class ControllerTests
     {
         private ISwatchHandler swatchHandler;
+        private SwatchController swatchController;
+
+
 
         [SetUp]
-        public void Setup()
+        public void SetUp()
         {
             this.swatchHandler = Substitute.For<ISwatchHandler>();
-            this.swatchHandler.Create(default).ReturnsForAnyArgs(new SwatchEntity());
+            this.swatchController = new SwatchController(swatchHandler);
         }
 
         [Test]
-        public CreateShouldDelegateToHandler()
+        public void ControllerShouldDeriveFromBaseController()
         {
-
+            Assert.IsInstanceOf<BaseController>(this.swatchController);
         }
 
+        [Test]
+        public void CreateShouldDelegateToHandler()
+        {
+        }
     }
 }
