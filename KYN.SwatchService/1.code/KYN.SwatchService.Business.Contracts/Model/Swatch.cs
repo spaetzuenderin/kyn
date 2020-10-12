@@ -10,14 +10,14 @@ namespace KYN.SwatchService.Business.Contracts.Model
     /// </summary>
     public class Swatch
     {
-        public Guid Id { get; }
-        public int NumberOfStitches { get; }
-        public int NumberOfRows { get; }
+        public Guid Id { get; set; }
+        public int NumberOfStitches { get; set; }
+        public int NumberOfRows { get; set; }
 
-        public string Name { get; }
-        public string Stitchpattern { get; }
-        public string Yarn { get; }
-        public double NeedleSize { get; }
+        public string Name { get; set; }
+        public string Stitchpattern { get; set; }
+        public string Yarn { get; set; }
+        public double NeedleSize { get; set; }
 
         public Swatch()
         {

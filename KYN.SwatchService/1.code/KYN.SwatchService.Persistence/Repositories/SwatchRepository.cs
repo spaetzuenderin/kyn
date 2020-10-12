@@ -17,10 +17,10 @@ namespace KYN.SwatchService.Persistence.Repositories
             this.dataContext = dataContext;
         }
 
-        public Task<SwatchEntity> Create(SwatchEntity swatchEntity)
+        public async Task<SwatchEntity> Create(SwatchEntity swatchEntity)
         {
-            this.dataContext.Add(swatchEntity);
+            return await this.dataContext.Add(swatchEntity);
         }
     }
 }
-}
+

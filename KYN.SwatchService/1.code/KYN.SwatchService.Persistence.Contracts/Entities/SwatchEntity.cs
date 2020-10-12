@@ -4,13 +4,13 @@ namespace KYN.SwatchService.Persistence.Contracts.Entities
 {
    public class SwatchEntity
     {
-        public Guid Id { get; }
-        public int NumberOfStitches { get; }
-        public int NumberOfRows { get; }
+        public Guid Id { get; set; }
+        public int NumberOfStitches { get; set; }
+        public int NumberOfRows { get; set; }
 
-        public string Name { get; }
-        public string Stitchpattern { get; }
-        public string Yarn { get; }
-        public double NeedleSize { get; }
+        public string Name { get; set; }
+        public string Stitchpattern { get; set; }
+        public string Yarn { get; set; }
+        public double NeedleSize { get; set; }
     }
 }

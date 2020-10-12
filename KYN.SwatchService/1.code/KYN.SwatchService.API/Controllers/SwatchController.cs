@@ -20,20 +20,20 @@ namespace KYN.SwatchService.API.Controllers
 
         [HttpPost]
         [Route("create")]
-        public async Task<IActionResult> Create(Swatch swatch)
+        public async Task<IActionResult>Create(Swatch swatch)
         {
-            SwatchEntity swatchEntity;
+            SwatchEntity createdEntity;
 
             try
             {
-                swatchEntity = await this.swatchHandler.Create(swatch);
+                createdEntity = await this.swatchHandler.Create(swatch);
             }
             catch (Exception)
             {
-                return BadRequest();
+                return BadRequest("Swatch could not be created");
             }
 
-            return Created($"api/SwatchService/{swatchEntity.Id.ToString()}", swatchEntity);
+            return Created($"api/SwatchService/{createdEntity.Id.ToString()}", createdEntity);
         }
     }
 }

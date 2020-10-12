@@ -10,7 +10,13 @@ namespace KYN.SwatchService.Business.Mappers
         {
             return new SwatchEntity
             {
-
+                Id = swatch.Id,
+                NumberOfStitches = swatch.NumberOfStitches,
+                NumberOfRows = swatch.NumberOfRows,
+                Name = swatch.Name,
+                Stitchpattern = swatch.Stitchpattern,
+                Yarn = swatch.Yarn,
+                NeedleSize = swatch.NeedleSize
             };
         }
 
@@ -18,7 +24,13 @@ namespace KYN.SwatchService.Business.Mappers
         {
             return new Swatch
             {
-
+                Id = swatchEntity.Id,
+                NumberOfStitches = swatchEntity.NumberOfStitches,
+                NumberOfRows = swatchEntity.NumberOfRows,
+                Name = swatchEntity.Name,
+                Stitchpattern = swatchEntity.Stitchpattern,
+                Yarn = swatchEntity.Yarn,
+                NeedleSize = swatchEntity.NeedleSize
             };
         }
     }
